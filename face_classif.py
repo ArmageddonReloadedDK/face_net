@@ -26,8 +26,9 @@ shape = 128
 rgb = 3
 
 # считывание количества фотографий
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+path=os.path.join(base_dir, "face_net_mkr\dataset")
 
-path = 'D:\PROJECTS\python\jupyter\dataset'
 for folder in os.listdir(path):
     for name in os.listdir(path + '/' + folder):
         N += 1
